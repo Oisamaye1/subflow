@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+h1{
+    font-weight: 600;
+    color: white;
+    line-height: normal;
+  }
+  
+  h2{
+    font-size: 24px;
+  }
+  
+  p{
+    font-size: 16px;
+    color: rgb(190, 187, 187);
+    line-height: normal;
+  }
+
