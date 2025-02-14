@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import Navbar from "@/components/navbar";
 import Darkmode from "@/components/dark-color";
-import Footer from "@/components/footer";
 const DMSans = DM_Sans({
   variable: "--font-dm-sans",
   subsets: ["latin"],
@@ -34,9 +32,7 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             <Darkmode>
-              <Navbar />
               {children}
-              <Footer />
             </Darkmode>
            
           </ThemeProvider>
