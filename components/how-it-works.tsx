@@ -23,7 +23,7 @@ export default function HowItWorks() {
     try {
       setWalletStatus("connecting")
       // Request account access
-      await window.ethereum.request({ method: "eth_requestAccounts" })
+      await window.ethereum
       setWalletStatus("connected")
       setErrorMessage(null)
     } catch (error) {
